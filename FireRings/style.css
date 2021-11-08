@@ -4,6 +4,13 @@
 body{
     display: flex;justify-content: center;align-items: center;min-height: 100vh;background: #000;
 }
+.container{
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+}
 .circle{
     position: relative;width: 600px;height:600px;filter: url(#wavy) blur(1px);
 }

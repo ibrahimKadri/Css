@@ -1,0 +1,27 @@
+body{
+    height: 100%;
+        margin: 0;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right,#03A9F4,#E91e63);
+}
+h2{
+    text-align: center; 
+    color: white;
+    margin-top: 18%
+}
+#a, 
+#b{
+    padding: 10px;
+    text-align: center; 
+    color:rebeccapurple;
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+}
+tr td button{
+    padding: 8px; 
+    width: 268px; 
+    font-size: 20px;
+    border-radius: 20px
+}

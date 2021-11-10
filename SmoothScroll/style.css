@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#d96aa7;
+    --secondary:#422c73;
+}
+.container{
+    background: #191919;
+    min-height: 100vh;
+    font-family: monospace;
+}
+nav{
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary);
+}
+nav a{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+section{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    color: white;
+    text-transform: uppercase;
+    opacity: 0;
+    letter-spacing: 2px;
+}
+#first i,
+#third i,
+#fourth i,
+#second i{
+    position: absolute;
+    top: 30%;
+    left: 47.2%;
+    font-size: 110px;
+    color: white;
+}
+section:target{
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+section:target h1{
+    opacity: 0;
+    animation: 2s fadeIn forwards 0.5s;
+}
+section img{
+    margin-left: 50px;
+}
+@keyframes fadeIn {
+    100%{
+        opacity: 1;
+    }
+}
+h1{
+    margin-left: 5px;
+}
+#first{
+    background: #f9c1b1;
+    background-image: linear-gradient(315deg, #f9c1b1 0%, #fb8085 74%);
+}
+#second{
+    background: deepskyblue;
+}
+#third{
+    background: hotpink;
+}
+#fourth{
+    background: green;
+}
+img{
+    height: 36px;
+    width: 36px;
+}

@@ -1,0 +1,47 @@
+body{
+    background-color: violet;
+    color: yellow;
+    text-align: center;
+    font-size: 30px;
+}
+.co{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    /* font-size: 26px; */
+}
+p{
+    float: left;
+}
+b{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    margin-top: 32px;
+    /* background-color: yellowgreen; */
+
+}
+span{
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    animation: move 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s; 
+    /* ^ how much does it take to animate when the page is loaded */
+}
+@keyframes move {
+    0%{
+        top: 0px;
+    }           
+    20%{
+        top: -36px;
+    } 
+    40%{
+        top: -72px;
+    }
+    60%{
+        top: -105px;
+    }
+}

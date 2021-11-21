@@ -1,0 +1,40 @@
+body{
+    background: #3333;
+}
+.container{
+height: 400px;
+width: 270px;
+margin: auto;
+margin-top: 100px;
+position: relative;
+cursor: pointer;
+}
+img{
+    height: 400px;
+    width: 270px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    background: white;
+    opacity: 0;
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.overlay h2,
+.overlay p{
+    text-align: center;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}

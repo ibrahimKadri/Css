@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ebecf0;
+}
+.container{
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #ebecf0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: -5px -5px 20px #fff,
+                 5px  5px 20px #babecc;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    box-shadow: inset -2px -2px 4px #fff,
+                inset  2px  2px 4px #babecc;
+    transition: all 0.3s ease;
+}
+.btn i{
+  font-size: 2.6em;
+  font-weight: 600;  
+}
+.fa-facebook-f{
+    color:#5967ff;
+}
+.fa-github{
+    color:#6e7492;
+}
+.fa-instagram{
+    color:#ff44d2;
+}
+.fa-linkedin-in{
+    color:#0917b1;
+}
+button:focus{
+    transform: scale(1);
+}

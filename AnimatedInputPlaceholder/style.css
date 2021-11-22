@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0; margin: 0;
+    background: green;
+    background-size: cover;
+
+}
+label{
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+input{
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    background: transparent !important;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    height: 58px;
+    transform: skew(-3deg, 1deg);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* valid for data if entered,focus when clicked */
+input:valid,input:focus{
+    outline: none;
+}
+input:focus ~ ul li:nth-child(1)::before,
+input:valid ~ ul li:nth-child(1)::before{
+    filter: blur(20px);
+    transform: translate(0, -35px) rotate(-210px);
+    /*translate(right,top);*/
+    /*removing the rotate will move the letter upward*/
+}
+input:focus ~ ul li:nth-child(1)::after,
+input:valid ~ ul li:nth-child(1)::after{
+    filter: blur(0);
+    transform: scale(1) rotate(0);
+    transition-delay: 400ms;
+}
+/**********************************/
+input:focus ~ ul li:nth-child(2)::before,
+input:valid ~ ul li:nth-child(2)::before{
+    filter: blur(20px);
+    transform: translate(0, -35px) rotate(-210px);
+}
+input:focus ~ ul li:nth-child(2)::after,
+input:valid ~ ul li:nth-child(2)::after{
+    filter: blur(0);
+    transform: scale(1) rotate(0);
+    transition-delay: 600ms;
+}
+/**********************************/
+input:focus ~ ul li:nth-child(3)::before,
+input:valid ~ ul li:nth-child(3)::before{
+    filter: blur(20px);
+    transform: translate(0, -35px) rotate(-210px);
+}
+input:focus ~ ul li:nth-child(3)::after,
+input:valid ~ ul li:nth-child(3)::after{
+    filter: blur(0);
+    transform: scale(1) rotate(0);
+    transition-delay: 800ms;
+}
+/**********************************/
+input:focus ~ ul li:nth-child(4)::before,
+input:focus ~ ul li:nth-child(4)::before{
+    filter: blur(20px);
+    transform: translate(0, -35px) rotate(-210px);
+}
+input:focus ~ ul li:nth-child(4)::after,
+input:valid ~ ul li:nth-child(4)::after{
+    filter: blur(0);
+    transform: scale(1) rotate(0);
+    transition-delay: 1000ms;
+}
+/**********************************/
+input:focus ~ ul li:nth-child(5)::before,
+input:valid ~ ul li:nth-child(5)::before{
+    filter: blur(20px);
+    transform: translate(0, -35px) rotate(-210px);
+}
+input:focus ~ ul li:nth-child(5)::after,
+input:valid ~ ul li:nth-child(5)::after{
+    filter: blur(0);
+    transform: scale(1) rotate(0);
+    transition-delay: 1200ms;
+}
+/**********************************/
+input:focus ~ ul li:nth-child(6)::before,
+input:valid ~ ul li:nth-child(6)::before{
+    filter: blur(20px);
+    transform: translate(0, -35px) rotate(-210px);
+}
+input:focus ~ ul li:nth-child(6)::after,
+input:valid ~ ul li:nth-child(6)::after{
+    filter: blur(0);
+    transform: scale(1) rotate(0);
+    transition-delay: 1400ms;
+}
+/**********************************/
+ul{
+    position: absolute;
+    top: 30px;
+    left: -4px;
+    margin: 0;
+    list-style: none;
+    padding-left: 22px;
+    position: absolute;
+    display: flex;
+    transition: 300ms;
+}
+ul li{
+    text-transform: uppercase;
+    color: transparent;
+}
+
+ul li::after,
+ul li::before{
+    color: white;
+    position: absolute;
+    transition: 800ms ease-in-out;
+}
+
+ul li::before{
+    top: -20px;
+}
+ul li::after{
+    top: -63px;
+    transform: scale(0) rotate(230deg);
+    filter: blur(20px);
+}
+ul li[s]::before{
+    content: attr(s) "s";
+    transition-delay: 200ms;
+}
+ul li[s]::after{
+    content: attr(s) "s";
+    color: white;
+    left: 12px;
+}
+/***************************/
+ul li[e]::before{
+    content: attr(e) "e";
+    transition-delay: 400ms;
+}
+ul li[e]::after{
+    content: attr(e) "e";
+    color: white;
+    left: 24px;
+}
+/***************************/
+ul li[a]::before{
+    content: attr(a) "a";
+    transition-delay: 600ms;
+}
+ul li[a]::after{
+    content: attr(a) "a";
+    color: white;
+    left: 36px;
+}
+/***************************/
+ul li[r]::before{
+    content: attr(r) "r";
+    transition-delay: 800ms;
+}
+ul li[r]::after{
+    content: attr(r) "r";
+    color: white;
+    left: 48px;
+}
+/***************************/
+ul li[c]::before{
+    content: attr(c) "c";
+    transition-delay: 1000ms;
+}
+ul li[c]::after{
+    content: attr(c) "c";
+    color: white;
+    left: 60px;
+}
+/***************************/
+ul li[h]::before{
+    content: attr(h) "h";
+    transition-delay: 1200ms;
+}
+ul li[h]::after{
+    content: attr(h) "h";
+    color: white;
+    left: 72px;
+}
+/***************************/

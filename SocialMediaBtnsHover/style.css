@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #131313;
+}
+.social-media-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 3px solid;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.social-media span{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-weight: bolder;
+    transform: translateY(-100px);
+    transition: transform 0.3s;
+}
+.social-media:first-child{
+    background-color: #4267b2;
+    border-color: #4267b2;
+    color: #4267b2;
+}
+.social-media:nth-child(2){
+    background-color:#0088cc ;
+    border-color:#0088cc ;
+    color: #0088cc;
+}
+.social-media:nth-child(3){
+    background-color:#00acee ;
+    border-color: #00acee;
+    color: #00acee;
+}
+.social-media:last-child{
+    background-color: #ea4c89;
+    border-color: #ea4c89;
+    color: #ea4c89;
+}
+.social-media:not(:last-child){
+    margin-right: 25px;
+}
+.social-media i{
+    color: #fff;
+    font-size: 25px;
+    transition: transform 0.3s;
+}
+.social-media:hover i{
+    transform: translateY(100px);
+}
+.social-media:hover span{
+    transform: translateY(0);
+}
+.social-media:hover{
+    width: 188px;
+    border-radius: 0;
+    background: none;
+}
+
+@media (max-width:375px) {
+    .social-media{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+    .social-media:hover{
+        width: 100px;
+    }
+}

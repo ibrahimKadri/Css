@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 280px;
+    /* because the image width is 280, we devide 280 over 4, which is equal to 70 */
+    height: 300px;
+    display: flex;
+}
+.container span{
+    width: 25%;
+    height: 100%;
+    background-image: url("https://wallpaperaccess.com/full/4403758.jpg");
+    background-size: cover;
+    box-shadow: inset 20px 0 40px rgba(0, 0, 0, 0.4);
+}
+/* we created 4 spans, the image must be delivered among these 4 spans */
+/* to do this, we give each span a bg-position, each position is increasing by 70 */
+/* At the end the sum of these bg-position is 280, which is equal to the image width */
+span:first-child{
+background-position: 0;
+}
+span:nth-child(2){
+background-position: -70px;
+}
+span:nth-child(3){
+background-position: -140px;
+}
+span:last-child{
+background-position: -210px;
+}
+
+.container span:nth-child(odd){
+    transform: skewY(20deg);
+}
+.container span:nth-child(even){
+    transform: skewY(-20deg);
+}

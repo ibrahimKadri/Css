@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lightskyblue;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border: 10px solid blue;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px black,
+                -1px -1px 5px black,
+                inset 1px 1px 5px black,
+                inset -1px -1px 5px black;
+    background-color: yellow;
+}
+
+.fa-arrow-up{
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    color: red;
+    text-shadow: 1px 1px 5px black,
+                -1px -1px 5px black;
+    animation: clock 12s steps(12) infinite;
+    transform-origin: bottom;
+}
+@keyframes clock {
+   from{
+       transform: rotateZ(0deg) scaleX(.6);
+   } 
+   to{
+    transform: rotateZ(360deg) scaleX(.6);
+    } 
+}

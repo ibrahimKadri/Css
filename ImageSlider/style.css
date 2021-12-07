@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+.main{
+    height: 400px;
+    width: 270px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow: 0p 0px 0px goldenrod;
+}
+.slides{
+    height: 100%;
+    width: 500%;
+    display: flex;
+    position: relative;
+}
+.slides > img{
+    height: 100%;
+    width: 20%;
+    object-fit: cover;
+    position: relative;
+}
+input{
+    display: none;
+}
+label{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.switch{
+    position: absolute;
+    height: 30px;
+    width: 70px;
+    background: crimson;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black,
+                inset 0px 0px 5px black;
+}
+.switch::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    transition: .6s;
+}
+
+#auto_play:checked ~ label  .switch{
+    background: lightgreen;
+}
+#auto_play:checked ~ label > .switch::before{
+    /* background: green; */
+    left: 40px;
+}
+#auto_play:checked ~ .main .slides  img{
+    animation: play 5s alternate infinite;
+}
+@keyframes play {
+    0%{
+        left:0%;
+    }
+    100%{
+        left:-40%;
+    }
+}

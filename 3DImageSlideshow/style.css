@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: purple;
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 200px;
+    width: 200px;
+    margin:auto;
+    perspective: 1000px;
+    position: relative;
+}
+.slides{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    animation: animate 10s linear infinite;
+}
+.slides:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+@keyframes animate {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    image-rendering: auto;
+    position: absolute;
+    box-shadow: 0px 0px 5px gray;
+}
+img:hover{
+    box-shadow: 0px 0px 10px white;
+    bottom: 20px;
+    -webkit-box-reflect: below 25px linear-gradient(0deg, white 0%, transparent 50%);
+    transition: all .6s ease;
+}
+/*rotateY degree depends on the no of imgs
+we have 6 imgs
+divided on 360 
+we'll get 60
+so the rotation is increasing by 60 deg*/
+img:nth-child(1){
+    transform: rotateY(60deg) translateZ(270px);
+}
+img:nth-child(2){
+    transform: rotateY(120deg) translateZ(270px);
+}
+img:nth-child(3){
+    transform: rotateY(180deg) translateZ(270px);
+}
+img:nth-child(4){
+    transform: rotateY(240deg) translateZ(270px);
+}
+img:nth-child(5){
+    transform: rotateY(300deg) translateZ(270px);
+}
+img:nth-child(6){
+    transform: rotateY(360deg) translateZ(270px);
+}

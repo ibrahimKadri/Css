@@ -1,0 +1,113 @@
+:root{
+    --font-size:4em;
+    --adh1:1s;
+    --adh2:1.5s;
+    --adh3:2s;
+    --adh4:2.5s;
+    --adh5:3s;
+    --adh6:3.5s;
+    --adh7:4s;
+
+}
+@media (max-width:950px) {
+    :root{
+        --font-size:3.5em;
+    }  
+}
+@media (max-width:830px) {
+    :root{
+        --font-size:3em;
+        --adh1:0.5s;
+        --adh2:1s;
+        --adh3:1.5s;
+        --adh4:2s;
+        --adh5:2.5s;
+        --adh6:3s;
+        --adh7:3.5s;
+    }  
+}
+@media (max-width:720px) {
+    :root{
+        --font-size:2em;
+        --adh1:0.3s;
+        --adh2:.6s;
+        --adh3:.9s;
+        --adh4:1.2s;
+        --adh5:1.5s;
+        --adh6:1.8s;
+        --adh7:2.1s;
+    }  
+}
+@media (max-width:480px) {
+    :root{
+        --font-size:1em;
+        --adh1:0.1s;
+        --adh2:0.12s;
+        --adh3:0.14s;
+        --adh4:0.16s;
+        --adh5:0.18s;
+        --adh6:0.2s;
+        --adh7:0.21s;
+    }  
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+video{
+    object-fit: cover;
+    position: fixed;
+min-height: 100%;
+min-width: 100%;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    font-size: var(--font-size);
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    letter-spacing: 0.1em;
+}
+h1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+h1 span:nth-child(1){
+    animation-delay: var(--adh1);
+}
+h1 span:nth-child(2){
+    animation-delay: var(--adh2);
+}
+h1 span:nth-child(3){
+    animation-delay: var(--adh3);
+}
+h1 span:nth-child(4){
+    animation-delay: var(--adh4);
+}
+h1 span:nth-child(5){
+    animation-delay: var(--adh5);
+}
+h1 span:nth-child(6){
+    animation-delay: var(--adh6);
+}
+h1 span:nth-child(7){
+    animation-delay: var(--adh7);
+}

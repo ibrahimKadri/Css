@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ed9421;
+    height: 100%;
+    overflow: hidden;
+
+}
+p{
+    font-size: 1.3em;
+    width: 90%;
+    position: absolute;
+    z-index: 99;
+    margin: 20px ;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    bottom: 0;
+    left: 0;
+    background: url(wave.png);
+    animation: animate 10s linear infinite;
+}
+.wave::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(wave.png);
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+}
+.wave::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(wave.png);
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation-delay:2s;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+@keyframes animate-reverse {
+    0%{
+        background-position: 1360px;
+    }
+    100%{
+        background-position: 0;
+    }
+}

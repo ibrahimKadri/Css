@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon Bar</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .bar{
+            height: 100vh;
+            width: 200px;
+        }
+        .bar .icon{
+            height: 20%;
+            font-size: 2rem;
+            background: gray;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+        }
+        .bar .icon:hover{
+            background: #333;
+        }
+        .bar .active{
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Vertical Icon Bar -->
+    <div class="bar">
+        <div class="icon active">
+            <!-- House -->
+            &#127968;
+        </div>
+        <div class="icon">
+            <!-- Magnifying Glass -->
+            &#128269;
+        </div>
+        <div class="icon">
+            <!-- Earth -->
+            &#127758;
+        </div>
+        <div class="icon">
+            <!-- Football -->
+            &#9917;
+        </div>
+        <div class="icon">
+            <!-- Question Mark -->
+            &#10068;
+        </div>
+    </div>
+</body>
+</html>

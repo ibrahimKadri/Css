@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            height: 90vh;
+            display: grid;
+            place-items: center;
+            background: #5271ff;
+            letter-spacing: 1px;
+            font-size: 18px;
+            user-select: none;
+        }
+        label{
+            margin-top: 5px;
+            color: #333;
+        }
+        input{
+            outline: none;
+            border-color:#5271ff ;
+            margin-top: -10px;
+            transition: .3s ease;
+            border-radius: 3px;
+            padding-left: 10px;
+            font-size: 18px;
+            width: 95%;
+        }
+        input:focus,input::placeholder{
+            color: #5271ff;
+        }
+        input[type="button"]{
+            margin-top: 10px;
+            background: #5271ff;
+            cursor: pointer;
+            color: #fff;
+            box-shadow: 3px 3px 3px #333;
+            margin: auto;
+
+        }
+        .forget-password{
+            margin-top: 10px;
+        }
+        .forget-password a{
+            color: #5271ff;
+        }
+        .container{
+            display: grid;
+            background: #fff;
+            border: 1px solid #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 240px;
+            margin: auto;
+            height: 350px;
+            box-shadow: 10px 10px 3px #333;
+        }
+        .container .img{
+            text-align: center;
+            background: #5271ff;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            margin: auto;
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="img">
+                &#128512;
+            </div>
+        <label for="name">Username</label>
+        <input type="text" id="name" placeholder="JohnSmith">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="********">
+        <input type="button" value="Login">
+        <div class="forget-password">Forget <a href="#">password?</a> </div>
+    </div>
+</body>
+</html>

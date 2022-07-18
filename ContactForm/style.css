@@ -1,0 +1,82 @@
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.container .row-1{
+    display: flex;
+}
+.row-1 .column-1{
+    width: 80%;
+    background: #5271ff;
+}
+.row-1 .column-1 form{
+    display: grid;
+    padding: 20px;
+}
+.row-1 .column-1 form h1{
+    color: #fff;
+}
+.row-1 .column-1 form label,
+.row-1 .column-1 form button{
+    margin-top: 20px;
+    font-size: 19px;
+    color: #fff;
+}
+.row-1 .column-1 form input,
+.row-1 .column-1 form textarea{
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+}
+.row-1 .column-1 form input:focus,
+.row-1 .column-1 form textarea:focus{
+    color: #5271ff;
+}
+.row-1 .column-1 form button{
+    width: 200px;
+    cursor: pointer;
+    padding: 5px 0;
+    background: #fff;
+    color: #5271ff;
+    outline: none;
+    border: none;
+    box-shadow: 3px 3px 3px #222;
+}
+.row-2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.row-2 div{
+    display: grid;
+    text-align: center;
+}
+.row-2 div span{
+    background: #5271ff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: #fff;
+    margin: auto;
+    margin-bottom: 10px;
+}
+@media (max-width:700px) {
+    .container .row-1{
+        flex-flow: column;
+    }
+    .row-1 .column-1{
+        width: 100%;
+    }
+    .row-1 .column-2{
+        height: 350px;
+    }
+}
+@media (max-width:660px) {
+    .row-2{
+        flex-flow: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+nav{
+    background: #5278ff;
+    display: flex;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+a:hover{
+    background: #fff;
+    color: #5278ff;
+}
+.dropdown{
+    position: relative;
+    padding: 10px;
+}
+.dropdown-content{
+    position: absolute;
+    background: #5278ff;
+    top: 42px;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 0 3px #222;
+}
+.dropdown-content a{
+    display: block;
+    text-decoration: none;
+}
+nav .dropdown:hover .dropdown-content{
+    display: block;
+}
+nav .dropdown:hover .dropdown-content{
+    display: block;
+    color: #5278ff;
+}

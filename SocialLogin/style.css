@@ -1,0 +1,135 @@
+/* GENERTAL */
+button{
+    cursor: pointer;
+    color: #fff;
+    background: #5278ff;
+    outline: none;
+    font-size: 20px;
+    opacity: .8;
+}
+button:hover{
+    opacity: 1;
+}
+input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+i{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #fff;
+}
+/* STYLING */
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    user-select: none;
+    place-items: center;
+}
+.container{
+    width: 85vw;
+    max-width: 900px;
+    background: #e3e3e3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #222;
+}
+.container h2{
+    text-align: center;
+}
+.container .first-row{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.container .first-row .column-1{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 40%;
+}
+.container .first-row .column-1 button{
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    margin-top: 5px;
+    display: flex;
+    border: none;
+}
+.container .first-row .column-1 button.fb{
+    background: #3B5998;
+}
+.container .first-row .column-1 button.tw{
+    background: #55ACEE;
+}
+.container .first-row .column-1 button.google{
+    background: #dd4b39;
+}
+.container .first-row .column-2{
+    height: 180px;
+    width: 3px;
+    background: #999;   
+}
+.container .first-row .column-3{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 40%;
+}
+.container .first-row .column-3 input{
+    margin-top: 5px;
+    padding: 10px 3px;
+}
+.container .first-row .column-3 button{
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    background: #5278ff;
+    border: none;
+}
+.container .second-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+.container .second-row button{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.container .second-row button.signup{
+    background: transparent;
+    color: #5278ff;
+    border-color:#5278ff;
+}
+.container .second-row button.forget-p{
+    border: none;
+}
+@media (max-width:640px) {
+    .container .first-row{
+        flex-flow: column;
+    }
+    .container .first-row .column-1{
+        width: 100%;
+    }
+    .container .first-row .column-2{
+        width: 100%;
+        height: 5px;
+    }
+    .container .first-row .column-3{
+        width: 100%;
+    }
+    .container .second-row{
+        flex-flow: column;
+        margin-top: 40px;
+    }
+    .container .second-row button{
+        width: 100%;
+    }
+}

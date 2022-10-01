@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio src="audio/saada.mp3" type="audio/mp3" controls autoplay id="mp3" style="display: none;">
-        <source src="audio/saada.mp3" type="audio/mp3" controls autoplay>
+    <audio src="audio/saada.mp3" type="audio/mp3" controls id="mp3" style="display: none;">
+        <source src="audio/saada.mp3" type="audio/mp3">
     </audio>
     <div class="container">
         <div class="card">
-            <div class="card-inner">
+            <div class="card-inner" onmouseover="mouseOver()">
                 <div class="front-face">
                     <img src="cake2.jpg" alt="">
                 </div>
@@ -39,11 +39,9 @@
         </div>
     </div>
     <script>
-      window.onload=function(){
-          document.getElementById('mp3').play();
-       }
-       // const soundFile = new Audio('audio/saada.mp3');
-     //   soundFile.play();
+function mouseOver() {
+    document.getElementById('audio').play();
+}
     </script>
 </body>
 </html>

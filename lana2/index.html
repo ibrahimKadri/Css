@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-inner" onmousemove="mouseOver()">
+                <div class="front-face">
+                    <img src="cake2.jpg" alt="">
+                </div>
+                <div class="back-face">
+                    حبيت إسبق الكل وإكتبلك
+                    <br>
+                    إن شاء الله تكون سنة خير 
+                    <br>
+                    سنة بشوفك فيها بأعلى المراتب ومن الأوائل على لبنان 
+                    <br>
+                    سنة تكوني فيها مبسوطة، وبصحة منيحة
+                    <br>
+                    سنة بترفعي فيها رؤوس آل غانم والقادري وكل الأحباب
+                    <br>
+                    سنة بتعيشي فيها أحلى الذكريات
+                    <br>
+                    سنة بتكون فيها ذكرياتنا سوا أحلى وأحلى
+                    <br>
+                    كل عام وأنت يا حلوة
+                    <br>
+                    بألف خير وبركة
+                    
+                </div>
+            </div>
+            <audio id="lanAudio" src="audio/audio.mp4" type="audio/mp4" controls>
+                <source src="audio/audio.mp4" type="audio/mp4" disabled>
+            </audio>
+        </div>
+    </div>
+    <script>
+        function mouseOver() {
+            document.getElementById('lanAudio').play();
+        }
+    </script>
+</body>
+</html>

@@ -11,7 +11,7 @@
     
     <div class="container">
         <div class="card">
-            <div class="card-inner">
+            <div class="card-inner" onmousemove="mouseOver()">
                 <div class="front-face">
                     <img src="cake2.jpg" alt="">
                 </div>
@@ -34,7 +34,15 @@
 
                 </div>
             </div>
+             <audio id="record" src="salam.mp3" type="audio/mp3" controls>
+                <source src="salam.mp3" type="audio/mp3">
+            </audio>
         </div>
     </div>
+        <script>
+        function mouseOver() {
+            document.getElementById('record').play();
+        }
+    </script>
 </body>
 </html>

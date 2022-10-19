@@ -13,7 +13,7 @@
     </audio>
     <div class="container">
         <div class="card">
-            <div class="card-inner">
+            <div class="card-inner" onmousemove="mouseOver()">
                 <div class="front-face">
                     <img src="cake2.jpg" alt="">
                 </div>
@@ -34,15 +34,15 @@
                     <br>
                 </div>
             </div>
+              <audio id="record" src="audio/issa.mp3" type="audio/mp3" controls>
+                <source src="audio/issa.mp3" type="audio/mp3">
+            </audio>
         </div>
     </div>
     <script>
-        // window.onload=function(){
-        //     document.getElementById('mp3').play();
-        // }
-        var audio = new Audio('audio/issa.mp3');
-        audio.play();
-        
+        function mouseOver() {
+            document.getElementById('record').play();
+        }
     </script>
 </body>
 </html>

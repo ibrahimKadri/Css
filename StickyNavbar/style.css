@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+h1{
+    text-align: center;
+    padding: 70px 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #ccc;
+}
+nav{
+    background: #333;
+    position: sticky;
+    top: 0px;
+    padding: 20px;
+}
+nav a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+p{
+    padding: 20px;
+    font-size: 24px;
+    height: 800px;
+}

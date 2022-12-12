@@ -1,0 +1,68 @@
+body{
+    background:#0a7aca;
+    font-size: 20px;
+}
+.container{
+    min-width: 250px;
+    max-width: 500px;
+    margin: 100px auto 0 auto;
+    background: #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.container .details{
+    display: flex;
+    justify-content: space-between;
+}
+.container .bar{
+    width: 100%;
+    background: #fff;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+.container #html{
+    background: blue;
+    width: 0;
+    height: 40px;
+    animation: html-fill 5s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+.container #css{
+    background: yellow;
+    width: 0;
+    height: 40px;
+    animation: css-fill 5s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 80%;
+    }
+}
+.container #js{
+    background: red;
+    width: 0;
+    height: 40px;
+    animation: js-fill 5s forwards;
+}
+@keyframes js-fill{
+    100%{
+        width: 47%;
+    }
+}
+.container #jquery{
+    background: purple;
+    width: 0;
+    height: 40px;
+    animation: jquery-fill 5s forwards;
+}
+@keyframes jquery-fill{
+    100%{
+        width: 23%;
+    }
+}

@@ -1,0 +1,36 @@
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #252525;
+    user-select: none;
+}
+p{
+    width: 250px;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+img{
+    width: 270px;
+    height: 350px;
+    cursor: pointer;
+}
+img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform:  rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform:  rotate(1deg); }
+    30% { transform:  rotate(0deg); }
+    40% { transform:  rotate(1deg); }
+    50% { transform:  rotate(-1deg); }
+    60% { transform:  rotate(0deg); }
+    70% { transform:  rotate(-1deg); }
+    80% { transform:  rotate(1deg); }
+    90% { transform:  rotate(0deg); }
+    100% { transform:  rotate(-1deg); }
+}

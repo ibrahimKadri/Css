@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+img{
+    height: 100px;
+    width: 300px;
+}
